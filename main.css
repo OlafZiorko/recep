@@ -1,0 +1,225 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  line-height: 1.1;
+}
+
+:root {
+  /*==== colors ====*/
+  --clor-White: hsl(0, 0%, 100%);
+  --clr-Stone-100: hsl(30, 54%, 90%);
+  --clr-Stone-150: hsl(30, 18%, 87%);
+  --clr-Stone-600: hsl(30, 10%, 34%);
+  --clr-Stone-900: hsl(24, 5%, 18%);
+  --clr-Brown-800: hsl(14, 45%, 36%);
+  --clr-Rose-800: hsl(332, 51%, 32%);
+  --clr-Rose-50: hsl(330, 100%, 98%);
+  --clr-text: hsl(0, 0%, 0%);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--clr-Stone-600);
+  font-family: "Outfit", sans-serif;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+img {
+  width: 100%;
+  display: block;
+}
+ul {
+  list-style-type: none;
+}
+p {
+  color: var(--clr-Stone-600);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.young-serif-bold {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.young-serif-bolder {
+  font-family: "Young Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.heading-2 {
+  color: var(--clr-Brown-800);
+  font-size: 1.8rem;
+}
+
+.page__header,
+section {
+  margin-inline: 1.9rem;
+}
+.page__header {
+  margin-bottom: 0.5rem;
+}
+.page__header article {
+  padding-block-start: 2.75rem;
+  padding-block-end: 1.5rem;
+}
+.page__header article .article__heading {
+  color: var(--clr-Stone-900);
+  font-size: 2.2rem;
+  line-height: 1;
+  margin-bottom: 1.52rem;
+}
+.page__header article .page__header--description {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.preparation__time {
+  background-color: var(--clr-Rose-50);
+  border-radius: 10px;
+  padding: 1.45rem;
+  margin-bottom: 2rem;
+}
+.preparation__time p {
+  color: var(--clr-Rose-800);
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.preparation__time--list {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-inline-start: 2rem;
+}
+
+.preparation__time--list .list__items {
+  color: var(--clr-Stone-600);
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 0.8rem;
+  padding-inline-start: 1rem;
+  line-height: 1.3;
+}
+
+.preparation__time--list .list__items:last-of-type {
+  padding-bottom: 0rem;
+}
+
+.ingredients__section,
+.instructions__section {
+  border-bottom: 1px solid rgb(236, 234, 234);
+}
+.ingredients__section .heading-2 {
+  color: var(--clr-Brown-800);
+  margin-bottom: 1.4rem;
+}
+.ingredients__list {
+  font-family: "Outfit", sans-serif;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-inline-start: 2rem;
+  margin-bottom: 1rem;
+}
+.ingredients__list .list__items {
+  padding-bottom: 0.5rem;
+  padding-inline-start: 1rem;
+  line-height: 1.4;
+}
+.instructions__section {
+  margin-top: 1.8rem;
+  padding-bottom: 1.5rem;
+}
+.instructions__section .heading-2 {
+  font-weight: 400;
+  margin-bottom: 1.55rem;
+}
+.instructions__list {
+  color: var(--clr-Brown-800);
+  font-size: 1rem;
+  font-weight: 600;
+  list-style-type: decimal;
+  padding-inline-start: 1.55rem;
+}
+.instructions__list .list__items {
+  margin-bottom: 0.5rem;
+}
+.instructions__list .list__items p {
+  line-height: 1.5;
+  padding-inline-start: 1rem;
+}
+.nutrition__section .heading-2 {
+  padding-block-start: 2rem;
+  padding-block-end: 1.5rem;
+}
+
+.nutrition__section p {
+  font-size: 1.04rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+.nutrition__table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  margin-block-end: 2rem;
+}
+
+.nutrition__table tr:not(tr:last-of-type) {
+  border-bottom: 1px solid rgb(236, 234, 234);
+}
+.nutrition__table tr td {
+  padding: 0.9rem;
+}
+.nutrition__table tr td:first-of-type {
+  padding-inline-start: 1.85rem;
+  width: 50%;
+}
+.nutrition__table tr td:last-of-type {
+  color: var(--clr-Rose-800);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: var(--clr-Stone-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    background-color: var(--clor-White);
+    border-radius: 2rem;
+    max-width: 740px;
+    padding: 2.5rem;
+    margin-block: 7.5rem;
+  }
+  .imgContainer {
+    border-radius: 0.85rem;
+    overflow: hidden;
+  }
+  .page__header,
+  section {
+    margin-inline: 0;
+  }
+  .page__header article .article__heading {
+    font-size: 2.4rem;
+  }
+}
